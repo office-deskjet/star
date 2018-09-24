@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5BA87A46
+P 3830 1490
+F 0 "R?" V 3623 1490 50  0000 C CNN
+F 1 "100R" V 3714 1490 50  0000 C CNN
+F 2 "" V 3760 1490 50  0001 C CNN
+F 3 "~" H 3830 1490 50  0001 C CNN
+	1    3830 1490
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BA87B0E
+P 4260 1490
+F 0 "D?" H 4260 1290 50  0000 C CNN
+F 1 "LED" H 4260 1380 50  0000 C CNN
+F 2 "" H 4260 1490 50  0001 C CNN
+F 3 "~" H 4260 1490 50  0001 C CNN
+	1    4260 1490
+	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85V-10SU U?
+U 1 1 5BA87F89
+P 1910 1900
+F 0 "U?" H 1380 1946 50  0000 R CNN
+F 1 "ATtiny85V-10SU" H 1380 1855 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 1910 1900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 1910 1900 50  0001 C CNN
+	1    1910 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5BA8809B
+P 5180 1990
+F 0 "BT?" H 5298 2086 50  0000 L CNN
+F 1 "Battery_Cell" H 5298 1995 50  0000 L CNN
+F 2 "" V 5180 2050 50  0001 C CNN
+F 3 "~" V 5180 2050 50  0001 C CNN
+	1    5180 1990
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5180 1790 5180 1620
+Text Label 5180 1620 0    50   ~ 0
+VCC
+Wire Wire Line
+	1910 1300 1910 1130
+Text Label 1910 1130 0    50   ~ 0
+VCC
+Wire Wire Line
+	1910 2670 1910 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5BA883A2
+P 1910 2670
+F 0 "#PWR?" H 1910 2420 50  0001 C CNN
+F 1 "GND" H 1915 2497 50  0000 C CNN
+F 2 "" H 1910 2670 50  0001 C CNN
+F 3 "" H 1910 2670 50  0001 C CNN
+	1    1910 2670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5180 2260 5180 2090
+$Comp
+L power:GND #PWR?
+U 1 1 5BA883E5
+P 5180 2260
+F 0 "#PWR?" H 5180 2010 50  0001 C CNN
+F 1 "GND" H 5185 2087 50  0000 C CNN
+F 2 "" H 5180 2260 50  0001 C CNN
+F 3 "" H 5180 2260 50  0001 C CNN
+	1    5180 2260
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BA890DC
+P 3830 1810
+F 0 "R?" V 3623 1810 50  0000 C CNN
+F 1 "100R" V 3714 1810 50  0000 C CNN
+F 2 "" V 3760 1810 50  0001 C CNN
+F 3 "~" H 3830 1810 50  0001 C CNN
+	1    3830 1810
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BA890E2
+P 4240 1810
+F 0 "D?" H 4240 1610 50  0000 C CNN
+F 1 "LED" H 4240 1700 50  0000 C CNN
+F 2 "" H 4240 1810 50  0001 C CNN
+F 3 "~" H 4240 1810 50  0001 C CNN
+	1    4240 1810
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BA8921B
+P 3830 2130
+F 0 "R?" V 3623 2130 50  0000 C CNN
+F 1 "100R" V 3714 2130 50  0000 C CNN
+F 2 "" V 3760 2130 50  0001 C CNN
+F 3 "~" H 3830 2130 50  0001 C CNN
+	1    3830 2130
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BA89221
+P 4230 2130
+F 0 "D?" H 4230 1930 50  0000 C CNN
+F 1 "LED" H 4230 2020 50  0000 C CNN
+F 2 "" H 4230 2130 50  0001 C CNN
+F 3 "~" H 4230 2130 50  0001 C CNN
+	1    4230 2130
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3980 2130 4080 2130
+$Comp
+L Device:R R?
+U 1 1 5BA89228
+P 3830 2450
+F 0 "R?" V 3623 2450 50  0000 C CNN
+F 1 "100R" V 3714 2450 50  0000 C CNN
+F 2 "" V 3760 2450 50  0001 C CNN
+F 3 "~" H 3830 2450 50  0001 C CNN
+	1    3830 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5BA8922E
+P 4210 2450
+F 0 "D?" H 4210 2250 50  0000 C CNN
+F 1 "LED" H 4210 2340 50  0000 C CNN
+F 2 "" H 4210 2450 50  0001 C CNN
+F 3 "~" H 4210 2450 50  0001 C CNN
+	1    4210 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4410 1490 4520 1490
+Wire Wire Line
+	4520 1490 4520 1810
+Wire Wire Line
+	4520 2450 4360 2450
+Wire Wire Line
+	4380 2130 4520 2130
+Connection ~ 4520 2130
+Wire Wire Line
+	4520 2130 4520 2450
+Wire Wire Line
+	4390 1810 4520 1810
+Connection ~ 4520 1810
+Wire Wire Line
+	4520 1810 4520 2130
+Wire Wire Line
+	4060 2450 3980 2450
+Wire Wire Line
+	3980 1810 4090 1810
+Wire Wire Line
+	3980 1490 4110 1490
+Wire Wire Line
+	2510 1600 2740 1600
+Text Label 2740 1600 2    50   ~ 0
+LED1
+Wire Wire Line
+	2510 1700 2740 1700
+Text Label 2740 1700 2    50   ~ 0
+LED2
+Wire Wire Line
+	2510 1800 2740 1800
+Text Label 2740 1800 2    50   ~ 0
+LED3
+Wire Wire Line
+	2510 1900 2740 1900
+Text Label 2740 1900 2    50   ~ 0
+LED4
+Wire Wire Line
+	2510 2000 2740 2000
+Text Label 2740 2000 2    50   ~ 0
+LED5
+Wire Wire Line
+	3450 1490 3680 1490
+Text Label 3450 1490 0    50   ~ 0
+LED1
+Wire Wire Line
+	3450 1810 3680 1810
+Text Label 3450 1810 0    50   ~ 0
+LED1
+Wire Wire Line
+	3450 2450 3680 2450
+Text Label 3450 2450 0    50   ~ 0
+LED1
+Wire Wire Line
+	3450 2130 3680 2130
+Text Label 3450 2130 0    50   ~ 0
+LED1
+$EndSCHEMATC
